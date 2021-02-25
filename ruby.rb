@@ -161,16 +161,160 @@
 # puts hello
 
 
-def fizz_buzz(num)
-  if num % 15 == 0
-    'FizzBuzz'
-  elsif num % 5 == 0
-    'Buzz'
-  elsif num % 3 == 0
-    'Fizz'
-  else
-    num.to_s
-  end
-end
-puts fizz_buzz(8)
+# def fizz_buzz(num)
+#   if num % 15 == 0
+#     'FizzBuzz'
+#   elsif num % 5 == 0
+#     'Buzz'
+#   elsif num % 3 == 0
+#     'Fizz'
+#   else
+#     num.to_s
+#   end
+# end
+# puts fizz_buzz(1)
+# puts fizz_buzz(2)
+# puts fizz_buzz(3)
+# puts fizz_buzz(4)
+# puts fizz_buzz(5)
 
+
+# puts 'abc'.class
+
+# puts %q! He said, "Don't speak."!
+# a = "Hello."
+# puts %Q! He said, "#{a}"!
+# b = "Bye."
+# puts %! He said, "#{b}"!
+# puts %q? He said, "Don't speak."?
+# puts %q{ He said, "Don't speak."}
+
+
+# puts "Line1,
+# Line2"
+
+# a = <<TEXT
+# これはヒアドキュメントです
+# 複数行に渡る長い文字列を作成するのに便利です。
+# TEXT
+
+# puts a
+
+# def some
+#   <<-TEXT
+# これはヒアドキュメントです
+# <<-を使うと最後の識別子をインデントさせることができます。
+#   TEXT
+# end
+
+# puts some
+
+# name = "Lisa"
+# a = <<TEXT
+# ようこそ、#{name}さん！
+# 今日も元気ですか？
+# TEXT
+# puts a
+
+# name = "Lisa"
+# a = <<'TEXT'
+# ようこそ、#{name}さん！
+# 今日も元気ですか？
+# TEXT
+# puts a
+
+
+
+# a = 'Ruby'
+# a.prepend("java")
+# puts a
+# a = 'Ruby'
+# a.prepend("java\n")
+# puts a
+
+# a = 'Ruby'
+# a.prepend(<<TEXT)
+# Java
+# PHP
+# TEXT
+# puts a
+
+
+# b = <<TEXT.upcase
+# Hello,
+# Good-bye.
+# TEXT
+# puts b
+
+
+# puts '%0.3f' % 1.2
+# puts sprintf('%0.3f', 1.2)
+# puts '%0.3f + %0.3f' %[1.2, 0.48]
+# puts sprintf('%0.3f + %0.3f', 1.2, 0.48)
+
+
+# puts 123
+# puts 123.class
+# puts 123.to_s
+# puts 123.to_s.class
+
+# puts [10, 20, 30]
+# puts [10, 20, 30].join
+
+# puts 'Hi!' * 10
+
+# puts "\u3042\u3044\u3046"
+# 2
+# puts 0b100
+# 8
+# puts 010
+# 16
+# puts 0x10
+
+# puts (~0b1010).to_s(2)
+# puts (0b1010 & 0b1100).to_s(2)
+# puts 2e-3
+
+
+# puts 10.class
+# puts 1.5.class
+# r = 2 / 3r
+# puts r
+# puts r.class
+
+# r = '2/5'.to_r
+# puts r
+# puts r.class
+
+# c = 0.3 - 0.5i
+# puts c
+# puts c.class
+# c = '0.3-0.5i'.to_c
+# puts c
+# puts c.class
+
+
+# puts 1 && 2 && 3
+# puts 1 && nil && 3
+# puts 1 && false && 3
+
+# puts nil || false
+# puts false || nil
+# puts nil || false || 2 || 3
+
+# status = 'error'
+# if status != 'ok'
+#   puts '何か異常があります'
+# end
+
+# status = 'error'
+# message =
+#   unless status == 'ok'
+#     '何か異常があります'
+#   else
+#     '正常です'
+#   end
+
+# puts message
+status = 'error'
+puts '何か異常があります' unless status == 'ok'
