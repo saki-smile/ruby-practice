@@ -39,7 +39,7 @@ for i in 1..n1[0] #箱の数繰り返す
     box = ary[i-1].map{|n| n.to_i}
     min_size = box.min
     if n1[1]*2 <= min_size
-        puts i
+      puts i
     end
 end
 
