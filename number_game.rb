@@ -57,3 +57,37 @@ ary.each do |a|                   #箱の数（行数）だけaに入れて繰�
         puts i
     end
 end
+
+
+
+
+# 入力例1
+# 2000 5 チャージ金額　乗車回数
+# 300　掛かった運賃
+# 500
+# 300
+# 100
+# 100
+
+# 出力例1
+# 1700 30　残額　ポイント残額
+# 1200 80
+# 900 110
+# 900 10
+# 800 20
+
+n_m = gets.split
+n,m = n_m.map{|n| n.to_i}
+ary = []
+m.times { ary << gets.chomp}
+ary = ary.map{|n| n.to_i}
+point = 0
+ary.each do |a|
+    if point >= a
+        point -= a
+    else
+        n -= a
+        point += a * 0.1
+    end
+    puts "#{n} #{point.to_i}"
+end
